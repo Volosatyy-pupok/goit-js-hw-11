@@ -7,7 +7,7 @@ import "izitoast/dist/css/iziToast.min.css";
 
 const searchForm = document.querySelector('.search-form');
 const galleryElement = document.querySelector('.gallery');
-const gallery = new SimpleLightbox('.gallery a');
+const gallery = new SimpleLightbox('.gallery a', { captionsData: "alt", captionDelay: 250, captionPosition: "bottom" });
 
 searchForm.addEventListener('submit', event => {
   event.preventDefault();
